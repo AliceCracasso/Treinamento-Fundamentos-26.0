@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    background-color: #2200e444;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    height: 10vh;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.logo  {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 85vh;
+}
+
+.bem-vindo {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2200e4;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Padrão 3 colunas */
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* 2 colunas (até 768px) */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 8px;
+    }
+}
+
+/* 1 coluna (até 480px) */
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 5px;
+    }
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 47, 255, 0.562);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    height: 150px;
+    border-radius: 10px;
+}
+
+.product-info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+.shop-button {
+    width: 100%;
+    height: 50px;
+    background-color: #2200e488;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    justify-items: center;
+    width: 100%;
+    background-color: #2200e444;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    height: 5vh;
+}
