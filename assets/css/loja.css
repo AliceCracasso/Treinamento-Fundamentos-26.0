@@ -6,23 +6,27 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: aliceblue;
+    background: linear-gradient(to bottom, #00a7cd60, #003e4f60);
+    background-color: #00a7cd73;
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
 }
 
 header {
-    background-color: #2200e444;
+    background-color: #00202a80;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    height: 10vh;
+    width: 100%;
 }
 
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 10%;
 }
 
 .nav-list {
@@ -32,8 +36,8 @@ header {
 }
 
 .logo  {
-    width: 50px;
-    height: 50px;
+    max-height: 100px;
+    padding-bottom: 10px;
 }
 
 main {
@@ -52,7 +56,7 @@ main {
     font-weight: bolder;
     text-align: center;
     margin-bottom: 30px;
-    color: #2200e4;
+    color: #00202a;
 }
 .grid-container {
     display: grid;
@@ -89,7 +93,7 @@ main {
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 10px;
-    background-color: rgba(0, 47, 255, 0.562);
+    background-color: #00202a80;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -108,7 +112,7 @@ main {
 .shop-button {
     width: 100%;
     height: 50px;
-    background-color: #2200e488;
+    background-color: #00202a;
     color: white;
     border: none;
     border-radius: 40px;
@@ -119,8 +123,9 @@ main {
 footer {
     justify-items: center;
     width: 100%;
-    background-color: #2200e444;
+    background-color: #00202a;
     border-top: 2px solid rgba(0, 0, 0, 0.2);
     padding: 20px;
     height: 5vh;
+    color: aliceblue;
 }
