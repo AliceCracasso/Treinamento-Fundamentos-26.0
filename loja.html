@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/loja.css">
-    <title>Loja</title>
+    <title>Aperture Science Shop</title>
 
 </head>
 <body>   
@@ -12,9 +12,9 @@
         <nav class="nav">
             <img class="logo" src="assets/imgs/aperturelogowhite.png" alt="Logo da Loja">
             <ul class="nav-list">
-                <li>Hello, custumer!</li>
-                <li>"cart"</li>
-                <li>"logout"</li>
+                <li>Hello, <span id="usuario-nome"></span>!</li>
+                <li><img src="assets/imgs/cart.png" alt="Cart"><span id="cart">0</span></li>
+                <li><button id="logout-button"><span id="logout"><img src="assets/imgs/logout.png" alt="Logout"></span></button></li>
             </ul>
         </nav>
     </header>
@@ -25,48 +25,54 @@
                 <img class="product-image" src="assets/imgs/portalgun.webp" alt="Aperture Science Handheld Portal Device">
                 <ul class="product-info">
                     <li><h2>Aperture Science Handheld Portal Device</h2></li>
+                    <li><h3>$899,99</h3></li>
                     <li><p> Places two portals through which objects can pass with no loss of momentum and (usually) no harm!.</p></li>
-                    <li><button class="shop-button">Buy now!</button></li>
+                    <li><button class="shop-button" id="product1">Buy now!</button></li>
                 </ul>
             </div>
             <div class="product">
                 <img class="product-image" src="assets/imgs/portalturret.webp" alt="Aperture Science Sentry Turret">
                 <ul class="product-info">
                     <li><h2>Aperture Science Sentry Turret</h2></li>
+                    <li><h3>$349,99</h3></li>
                     <li><p>Our most popular military-grade turret line, now available to normal consumers! With more bullets and new colors and patterns!</p></li>
-                    <li><button class="shop-button">Buy now!</button></li>
+                    <li><button class="shop-button" id="product2">Buy now!</button></li>
                 </ul>
             </div>
             <div class="product">
                 <img class="product-image"src="assets/imgs/longfallboots.webp" alt="Long Fall Boots">
                 <ul class="product-info">
                     <li><h2>Aperture Science Long Fall Boots</h2></li>
+                    <li><h3>$699,99</h3></li>
                     <li><p>Equipped with a special technology that keeps you landing on your feet safely from any height! Designed to be used with the ASHPD.</p></li>
-                    <li><button class="shop-button">Buy now!</button></li>
+                    <li><button class="shop-button" id="product3">Buy now!</button></li>
                 </ul>
             </div>
             <div class="product">
                 <img class="product-image"src="assets/imgs/weightedstoragecube.webp" alt="Aperture Science Weighted Storage Cube" >
                 <ul class="product-info">
                     <li><h2>Aperture Science Weighted Storage Cube</h2></li>
+                    <li><h3>$89,99</h3></li>
                     <li><p>Standard Weighted Storage Cube, perfect for testing! Calibrated to be exactly 40kg.</p></li>
-                    <li><button class="shop-button">Buy now!</button></li>
+                    <li><button class="shop-button" id="product4">Buy now!</button></li>
                 </ul>
             </div>
             <div class="product">
                 <img class="product-image"src="assets/imgs/weightedcompanioncube.png" alt="Aperture Science Weighted Companion Cube">
                 <ul class="product-info">
                     <li><h2>Aperture Science Weighted Companion Cube</h2></li>
+                    <li><h3>$139,99</h3></li>
                     <li><p>Weighted Storage Cube created to be bonded with. Caution: it may be sentient.</p></li>
-                    <li><button class="shop-button">Buy now!</button></li>
+                    <li><button class="shop-button" id="product5">Buy now!</button></li>
                 </ul>
             </div>
             <div class="product">
                 <img class="product-image"src="assets/imgs/aerialfaithplate.webp" alt="Aperture Science Aerial Faith Plate">
                 <ul class="product-info">
                     <li><h2>Aperture Science Aerial Faith Plate</h2></li>
-                    <li><p>Plate generates precise launch vectors. Crosses spatial gaps with perfect trajectory.</p></li>
-                    <li><button class="shop-button">Buy now!</button></li>
+                    <li><h3>$1459,99</h3></li>
+                    <li><p>Plate generates precise launch vectors. Crosses spatial gaps with perfect trajectory. Does not include installation.</p></li>
+                    <li><button class="shop-button" id="product6">Buy now!</button></li>
                 </ul>
             </div>
         </div>
@@ -76,7 +82,7 @@
     </footer>
 
 
-    
- 
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
+

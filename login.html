@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/login.css">
-    <title>Login - Loja</title>
+    <title>Login - Aperture Science Shop</title>
     
 </head>
 <body>
     <main class="container">
-        <form>
+        <form id="login-form">
             <img class="logo" src="assets/imgs/aperturelogowhite.png" alt="Logo da Loja" width="350px">
             <div class="input-box">
-                <input placeholder="E-mail" type="email">
+                <input placeholder="E-mail" id="email" type="email">
             </div>
             <div class="input-box">
-                <input placeholder="Password" type="password">
+                <input placeholder="Password" id="password" type="password">
             </div>
-            <button type="submit" class="login-button">Login</button>
+            <button type="submit" id="login-button" class="login-button">Login</button>
         </form>
     </main>
+
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
+
