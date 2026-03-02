@@ -61,7 +61,7 @@ main {
 }
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Padrão 3 colunas */
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Padrão 3 colunas */
     gap: 20px;
     width: 100%;
     padding: 10px;
@@ -70,7 +70,7 @@ main {
 /* 2 colunas (até 768px) */
 @media screen and (max-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 20px;
         padding: 8px;
     }
@@ -79,7 +79,7 @@ main {
 /* 1 coluna (até 480px) */
 @media screen and (max-width: 480px) {
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 15px;
         padding: 5px;
     }
@@ -114,7 +114,7 @@ main {
 }
 
 .product img {
-    height: 150px;
+    height: 200px;
     border-radius: 10px;
 }
 
