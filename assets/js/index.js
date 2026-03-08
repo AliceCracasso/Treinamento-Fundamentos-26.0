@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logoutButton.addEventListener('click', function() {
                 localStorage.removeItem('usuarioNome');
                 localStorage.removeItem('cartCount');
-                window.location.href = 'login.html';
+                window.location.href = 'index.html';
             });
         }
 
